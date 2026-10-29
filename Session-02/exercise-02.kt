@@ -1,5 +1,5 @@
 fun main() {
-    val score = 15 
+    val score = 15
 
     if (score >= 10) {
         println("The student has passed.")
@@ -7,3 +7,8 @@ fun main() {
         println("The student has failed.")
     }
 }
+
+/*
+--- OUTPUT ---
+The student has passed.
+*/
