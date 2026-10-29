@@ -6,7 +6,7 @@ fun main() {
     greet("Mehdi")
 }
 
-/*
+
 --- OUTPUT ---
 Hello, Mehdi! Welcome.
-*/
+
