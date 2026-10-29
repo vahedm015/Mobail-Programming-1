@@ -8,3 +8,8 @@ fun main() {
     val myBook = Book("The Great Gatsby", "F. Scott Fitzgerald")
     myBook.displayInfo()
 }
+
+/*
+--- OUTPUT ---
+Title: The Great Gatsby, Author: F. Scott Fitzgerald
+*/
