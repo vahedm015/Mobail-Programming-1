@@ -5,3 +5,8 @@ fun greet(name: String) {
 fun main() {
     greet("Mehdi")
 }
+
+/*
+--- OUTPUT ---
+Hello, Mehdi! Welcome.
+*/
