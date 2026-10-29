@@ -7,3 +7,8 @@ void main() {
     print("The student has failed.");
   }
 }
+
+/*
+--- OUTPUT ---
+The student has passed.
+*/
