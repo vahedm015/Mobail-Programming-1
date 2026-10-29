@@ -19,3 +19,12 @@ public class StudentInfo {
         input.close();
     }
 }
+
+/*
+--- OUTPUT ---
+Enter your name: Mehdi
+Enter your age: 19
+Name: Mehdi
+Current Age: 19
+Age next year: 20
+*/
