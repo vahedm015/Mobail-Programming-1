@@ -5,3 +5,12 @@ void main() {
     print(student);
   }
 }
+
+/*
+--- OUTPUT ---
+Ali
+Sara
+Reza
+Mehdi
+Nima
+*/
