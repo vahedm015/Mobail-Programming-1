@@ -7,3 +7,10 @@ void main() {
   print("Student Age: $studentAge");
   print("Field of Study: $studentField");
 }
+
+/*
+--- OUTPUT ---
+Student Name: Mehdi Vahed
+Student Age: 19
+Field of Study: Computer Engineering
+*/
