@@ -18,3 +18,9 @@ public class AgeCheck {
         scanner.close();
     }
 }
+
+/*
+--- OUTPUT (if age is 19) ---
+Enter your age: 19
+You are an adult and allowed to enter.
+*/
