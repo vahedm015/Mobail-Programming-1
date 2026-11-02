@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management (Ionic UI)</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+    <style>
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background-color: #f4f5f8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ion-page {
+            width: 100%;
+            max-width: 400px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .ion-header {
+            background-color: #3880ff;
+            color: white;
+            padding: 16px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .ion-content {
+            padding: 20px;
+        }
+
+        .input-item {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .ion-button {
+            background-color: #3880ff;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .ion-list {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .ion-item {
+            background-color: #f9f9f9;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ion-page">
+        <div class="ion-header">
+            مدیریت دانشجویان
+        </div>
+
+        <div class="ion-content">
+            <input type="text" id="studentName" class="input-item" placeholder="نام دانشجو را وارد کنید...">
+            
+            <button class="ion-button" onclick="addStudent()">ثبت دانشجو</button>
+
+            <ul class="ion-list" id="studentList">
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function addStudent() {
+            const input = document.getElementById('studentName');
+            const name = input.value.trim();
+            const list = document.getElementById('studentList');
+
+            if (name !== "") {
+                const li = document.createElement('li');
+                li.className = 'ion-item';
+                li.textContent = name;
+                list.appendChild(li);
+                input.value = "";
+            } else {
+                alert("لطفا نام دانشجو را وارد کنید.");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+<!--
+--- OUTPUT ---
+1. صفحه‌ای با هدر آبی رنگ با عنوان "مدیریت دانشجویان" نمایش داده می‌شود
+2. یک کادر ورودی برای تایپ نام دانشجو و یک دکمه برای ثبت وجود دارد
+3. با وارد کردن نام و کلیک روی دکمه، نام به لیست زیر اضافه می‌شود
+-->
