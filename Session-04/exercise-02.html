@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile with JS</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Tahoma, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 2px solid #4682b4;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #34495e;
+            margin: 10px 0;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #5a9bd4;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>پروفایل دانشجو</h1>
+        <p><strong>نام دانشجو:</strong> مهدی واحد</p>
+        <p><strong>رشته تحصیلی:</strong> مهندسی کامپیوتر</p>
+        <p><strong>نام دانشگاه:</strong> دانشگاه محمد باقر</p>
+
+        <button onclick="showMessage()">نمایش پیام</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent = "به برنامه خوش آمدید";
+        }
+    </script>
+
+</body>
+</html>
+
+<!--
+--- OUTPUT ---
+1. در ابتدا صفحه‌ای مشابه تمرین ۱ نمایش داده می‌شود که یک دکمه با عنوان "نمایش پیام" زیر اطلاعات دانشجو دارد
+2. وقتی کاربر روی دکمه کلیک می‌کند، پیام "به برنامه خوش آمدید" با رنگ سبز در زیر دکمه ظاهر می‌شود
+-->
